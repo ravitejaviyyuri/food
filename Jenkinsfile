@@ -4,8 +4,8 @@ pipeline {
     stage('Delete Previous folders') {
       steps {
         sh '''ssh azureuser@20.106.158.162 "
- rm -rf *
- rm -rf /var/www/html/* "
+ sudo rm -rf *
+ sudo rm -rf /var/www/html/* "
 '''
       }
     }
