@@ -21,7 +21,7 @@ pipeline {
       steps {
         sh '''ssh azureuser@20.106.158.162 "
 cd food/food
-sudo cp -r . /var/www/html "''
+sudo cp -r . /var/www/html '''
       }
     }
 
